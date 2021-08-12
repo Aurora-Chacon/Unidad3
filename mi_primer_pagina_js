@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+Front end 
+Java script es una lenguaje de programación variables, contantes, programar funciones, asi como clases arreglos listas entre otros
+Un html normal una funcion java script
+Una función java script se realiza cuando todo se encierra en una etiqueta llamada 
+script  se puede poner tambien dendro de body, pero lo mejor que valla dentro de 
+de head 
+-->
+<html>
+    <head>
+	<script>// función JS despues la palabra reservada, el nombre de la función 
+                // entre parentesis por si recibe algun parametro despues llaves 
+		function saludar(){
+                    //muestra el mensaje 
+                    alert('Hola Mundo!!!');
+                     //Entra al arbol de documento obtiene un nodo de ese arbol identificado como demo atravez de su ID
+                     //dentro de un arbol todos los nodos deben tener su propiedad ID´pero de un valor diferente no se 
+                     //puede repetir en este caso espesificar el ID
+                     //Si se agregara otro parrafo con el mismo id no marcara error pero 
+                     //al realizar las modificaciones se realizaran otras acciones no requeridas 
+                    //objeto document puede acceder a los nodos y modificar en este caso acceder al parrafo
+                    //innerHTML cambiara el valor de lo que tenemos en ese nodo por lo que se le indicara 
+                    // En este caso sera parrafo cambiado 
+                    document.getElementById("demo").innerHTML= "Párrafo cambiado";
+                }
+		</script>
+</head>
+<body>
+    // Titulo de la pagina 
+<h1> Mi primer Página con JS </h1>
+	<button onclick="saludar();"> Presionar </button>
+        <p id="demo"> Un parrafo</p>
+</body>
+</html>
